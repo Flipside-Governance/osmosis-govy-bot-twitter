@@ -12,10 +12,10 @@ A major pain point for validators is publishing and explaining their governance 
 
 ## Setup :construction:
 
-**Flipside Crypto**
+#### Flipside Crypto
 The Twitter bot pulls Osmosis voting data using [this query](https://app.flipsidecrypto.com/velocity/queries/a55642c5-f5a3-48af-bc89-862e506ae374) on Flipside Crypto. To modify the query, you will need a Flipside Crypto account. If you do not already have an account, you can sign up for free using either your email, Discord account, or Ethereum wallet. Then, fork the query and make the desired changes using Snowflake SQL. 
 
-**Twitter**
+#### Twitter
 This bot requires a Twitter Developer Account. To create a developer account, sign in to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/projects-and-apps) with the Twitter account you wish to use to send the automated tweets. Once your access has been approved, create a new application on the Twitter Developer Portal and generate your consumer and access keys and secrets. 
 
 When generating your keys, it is important to ensure your application has 'read and write' access. When setting up the application in the Twitter developer portal, click the app settings button in the bottom right corner. Scroll down to the heading labelled "User authentication settings" and click "set up." Scroll down to edit the App Permissions and select the "read and write" option. 
