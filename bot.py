@@ -37,7 +37,7 @@ for record in data:
     project_name = record['PROJECT_NAME']
     memo = record['MEMO']
     link_tx = 'https://www.mintscan.io/osmosis/txs'+tx_id
-    link_prop = 'https://www.mintscan.io/osmosis/proposals'+str(proposal_id)
+    link_prop = 'https://www.mintscan.io/osmosis/proposals/'+str(proposal_id)
     if vote_option == 1: 
         vote = 'voted yes'
     elif vote_option == 2: 
