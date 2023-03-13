@@ -53,7 +53,7 @@ for record in data:
     time.sleep(10)
     # Set the payload (i.e. the body of the tweet)
     media = api.media_upload(img)
-    payload = f"{label} {vote} on proposal {proposal_id} with the following rational: {memo}.\n{link_prop}"
+    payload = f"{label} {vote} on proposal {proposal_id} with the following rational:\n{memo}.\n{link_prop}"
     api.update_status(status=payload, media_ids=[media.media_id])
     # Update the status of the Twitter Bot 
     #api.update_status(payload)
