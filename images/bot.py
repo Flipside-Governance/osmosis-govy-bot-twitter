@@ -48,9 +48,16 @@ for record in data:
     else: 
         vote = 'voted no with veto'
 
-    img = 'images/{}.jpg'.format(project_name)
+    if project_name == 'flipside':
+        pic = requests.get('https://cdn-images-1.medium.com/max/1200/1*jyjwobJLOxKXIurGpC7myA.png')
+        img = PIL.Image.open(BytesIO(pic.content))
+    else:
+        print(pics[project_name])
+        pic = requests.get(pics[project_name])
+        img = PIL.Image.open(BytesIO(pic.content))
         
-    time.sleep(10)
+
+    time.sleep(1)
     # Set the payload (i.e. the body of the tweet)
     media = api.media_upload(img)
     payload = f"{label} {vote} on proposal {proposal_id} with the following rational: {memo}.\n{link_prop}"
